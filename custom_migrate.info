@@ -1,0 +1,8 @@
+name = Custom Migrate
+description = Custom Migrations from D6 to D7
+core = 7.x
+dependencies[] = migrate
+dependencies[] = migrate_d2d
+
+files[] = custom_migrate.migrate.inc
+files[] = node.inc
