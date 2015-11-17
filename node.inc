@@ -7,6 +7,7 @@ abstract class CustomNodeMigration extends DrupalNode6Migration {
   public function __construct(array $arguments) {
     parent::__construct($arguments);
 
+      // this below 2 lines are to preserve the d6 nid.
       $this->addFieldMapping('is_new')->defaultValue(TRUE);
       $this->addFieldMapping('nid', 'nid');
 
